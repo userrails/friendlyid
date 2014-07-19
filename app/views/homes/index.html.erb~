@@ -1,0 +1,18 @@
+<h2>Welcome To my home page</h2>
+
+<%= link_to "restaurants", restaurants_path %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>City</th>
+    <th>Street</th>
+    <th>Street Number</th>
+  </tr>
+  <% @restaurants.each do |r| %>
+    <td>Name</td>
+    <td>City</td>
+    <td>Street</td>
+    <td>Street Number</td>
+  <% end %>
+</table>

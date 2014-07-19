@@ -1,0 +1,31 @@
+<p>This is index page</p>
+<%= link_to "new", new_restaurant_path %>
+
+<br/>
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>City</th>
+    <th>Street</th>
+    <th>Street Number</th>
+    <th>Status</th>
+  </tr>
+  <% @restaurants.each do |r| %>
+    <td>
+     <%= r.name %>
+    </td>
+    <td>
+     <%= r.city %>
+    </td>
+    <td>
+     <%= r.street %>
+    </td>
+    <td>
+     <%= r.street_number %>
+    </td>
+    <td>
+     <%= link_to "show", restaurant_path(r.friendly_id) %>
+    </td>
+  <% end %>
+</table>

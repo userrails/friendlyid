@@ -1,0 +1,7 @@
+<%= @restaurant.id %> <br/>
+<%= @restaurant.name %> <br/>
+<%= @restaurant.city %> <br/>
+<%= @restaurant.street %> <br/>
+<%= @restaurant.street_number %> <br/>
+
+
